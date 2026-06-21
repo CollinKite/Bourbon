@@ -61,6 +61,8 @@ public class WhiskyWineInstaller {
     }
 
     public static func shouldUpdateWhiskyWine() async -> (Bool, SemanticVersion) {
+        // TODO(bourbon): repoint to Bourbon infrastructure — this is the upstream Whisky
+        // WhiskyWine version feed and will not be maintained for the fork.
         let versionPlistURL = "https://data.getwhisky.app/Wine/WhiskyWineVersion.plist"
         let localVersion = whiskyWineVersion()
 

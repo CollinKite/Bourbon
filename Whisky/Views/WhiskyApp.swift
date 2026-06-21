@@ -98,16 +98,19 @@ struct WhiskyApp: App {
             }
             CommandGroup(replacing: .help) {
                 Button("help.website") {
+                    // TODO(bourbon): repoint to Bourbon website once it exists (upstream Whisky).
                     if let url = URL(string: "https://getwhisky.app/") {
                         openURL(url)
                     }
                 }
                 Button("help.github") {
+                    // TODO(bourbon): repoint to CollinKite/Bourbon (still points at upstream Whisky).
                     if let url = URL(string: "https://github.com/Whisky-App/Whisky") {
                         openURL(url)
                     }
                 }
                 Button("help.discord") {
+                    // TODO(bourbon): repoint to Bourbon's Discord invite (upstream Whisky server).
                     if let url = URL(string: "https://discord.gg/CsqAfs9CnM") {
                         openURL(url)
                     }

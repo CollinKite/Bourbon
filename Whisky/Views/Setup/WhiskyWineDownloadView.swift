@@ -65,6 +65,8 @@ struct WhiskyWineDownloadView: View {
         .frame(width: 400, height: 200)
         .onAppear {
             Task {
+                // TODO(bourbon): repoint to Bourbon infrastructure — upstream Whisky Wine
+                // libraries download; replace with Bourbon-hosted build before release.
                 if let url: URL = URL(string: "https://data.getwhisky.app/Wine/Libraries.tar.gz") {
                     downloadTask = URLSession(configuration: .ephemeral).downloadTask(with: url) { url, _, _ in
                         Task.detached {

@@ -54,6 +54,8 @@
 		</dict>
 	</array>
 	<key>SUFeedURL</key>
+	<!-- TODO(bourbon): repoint to Bourbon's Sparkle appcast; this is upstream Whisky's feed.
+	     The SUPublicEDKey below is Whisky's signing key and must also be replaced. -->
 	<string>https://data.getwhisky.app/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>tnZFAvPUfCpM7Tr7Sx5gKRm6BUQQ6htJQeOMP44evms=</string>
